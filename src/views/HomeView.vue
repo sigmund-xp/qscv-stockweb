@@ -1,15 +1,15 @@
 <template>
-  <v-toolbar height="100" class="text-white gold-border px-2" color="#111111">
+  <v-toolbar height="60" class="text-grey-lighten-1 px-2" color="teal-darken-3">
     <div class="d-flex align-center flex-grow-1 ml-4">
       <div class="text-left">
-        <div>Stock</div>
+        <h1>Stock</h1>
       </div>
     </div>
     <v-spacer />
-    <v-btn icon="mdi-home" color="teal-darken-3" @click="goHome" />
-    <v-btn icon="mdi-logout" color="teal-darken-3" @click="logout" />
+    <v-btn icon="mdi-home" color="grey-lighten-1" @click="goHome" />
+    <v-btn icon="mdi-logout" color="grey-lighten-1" @click="logout" />
   </v-toolbar>
-  <v-container class="filter-container py-6" fluid>
+  <v-container class="filter-container" fluid>
     <v-row justify="center" align="center" dense>
       <v-col
         cols="12"
@@ -18,7 +18,7 @@
         v-for="(item, index) in menuItems"
         :key="index"
       >
-        <div class="menu-wrapper">
+        <div class="menu-wrapper pb-3">
           <v-btn
             class="menu-wrapper menu-button fill-height fill-width"
             :color="item.color"
@@ -66,7 +66,7 @@ const menuItems = [
 <style scoped>
 .menu-wrapper {
   aspect-ratio: 1 / 1;
-  width: 200px;
+  width: 160px;
 }
 
 @media (min-width: 600px) {

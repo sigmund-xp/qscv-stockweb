@@ -7,13 +7,13 @@
       <v-col cols="2" md="6" class="text-end">
         <v-btn
           color="teal-darken-3"
-          class="text-white d-none d-sm-inline"
+          class="text-grey-lighten-1 d-none d-sm-inline"
           icon="mdi-plus"
           @click="showAgregarCepa"
         />
         <v-btn
           color="teal-darken-3"
-          class="text-white d-inline d-sm-none"
+          class="text-grey-lighten-1 d-inline d-sm-none"
           icon="mdi-plus"
           size="small"
           @click="showAgregarCepa"
