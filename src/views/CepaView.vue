@@ -1,4 +1,5 @@
 <template>
+  <HeaderComponent />
   <v-container class="info-container">
     <v-row class="mb-0">
       <v-col cols="10" md="6" class="d-flex align-center">
@@ -91,6 +92,7 @@ import { useRouter } from "vue-router";
 import AgregarCepaDialogComponent from "@/components/dialog/AgregarCepaDialogComponent.vue";
 import DeleteConfirmationDialogComponent from "@/components/dialog/DeleteConfirmationDialogComponent.vue";
 import AlertComponent from "@/components/AlertComponent.vue";
+import HeaderComponent from "@/components/HeaderComponent.vue";
 
 import CepaService from "@/services/CepaService.js";
 import AuthService from "@/services/AuthService.js";

@@ -1,14 +1,5 @@
 <template>
-  <v-toolbar height="60" class="text-grey-lighten-1 px-2" color="teal-darken-3">
-    <div class="d-flex align-center flex-grow-1 ml-4">
-      <div class="text-left">
-        <h1>Stock</h1>
-      </div>
-    </div>
-    <v-spacer />
-    <v-btn icon="mdi-home" color="grey-lighten-1" @click="goHome" />
-    <v-btn icon="mdi-logout" color="grey-lighten-1" @click="logout" />
-  </v-toolbar>
+  <HeaderComponent />
   <v-container class="filter-container" fluid>
     <v-row justify="center" align="center" dense>
       <v-col
@@ -38,6 +29,7 @@
 
 <script setup>
 import { useRouter } from "vue-router";
+import HeaderComponent from "@/components/HeaderComponent.vue";
 
 const router = useRouter();
 
