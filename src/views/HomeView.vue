@@ -1,5 +1,15 @@
 <template>
-  <v-container class="gold-border filter-container py-6" fluid>
+  <v-toolbar height="100" class="text-white gold-border px-2" color="#111111">
+    <div class="d-flex align-center flex-grow-1 ml-4">
+      <div class="text-left">
+        <div>Stock</div>
+      </div>
+    </div>
+    <v-spacer />
+    <v-btn icon="mdi-home" color="teal-darken-3" @click="goHome" />
+    <v-btn icon="mdi-logout" color="teal-darken-3" @click="logout" />
+  </v-toolbar>
+  <v-container class="filter-container py-6" fluid>
     <v-row justify="center" align="center" dense>
       <v-col
         cols="12"
@@ -33,21 +43,21 @@ const router = useRouter();
 
 const menuItems = [
   {
-    label: 'Stock',
-    icon: 'mdi-bottle-wine',
-    color: '#6A1B9A',
+    label: "Stock",
+    icon: "mdi-bottle-wine",
+    color: "#6A1B9A",
     action: () => router.push("/stock"),
   },
   {
-    label: 'Bodegas',
-    icon: 'mdi-warehouse',
-    color: 'teal-darken-3',
+    label: "Bodegas",
+    icon: "mdi-warehouse",
+    color: "teal-darken-3",
     action: () => router.push("/bodegas"),
   },
   {
-    label: 'Cepas',
-    icon: 'mdi-fruit-grapes',
-    color: 'teal-darken-3',
+    label: "Cepas",
+    icon: "mdi-fruit-grapes",
+    color: "teal-darken-3",
     action: () => router.push("/cepas"),
   },
 ];
