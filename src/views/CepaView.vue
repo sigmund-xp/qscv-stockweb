@@ -167,7 +167,7 @@ const deleteCepa = async () => {
     deleteDialog.value = false;
   } catch (error) {
     alertText.value =
-      "No pudimos eliminar el herrador. Por favor, inténtalo de nuevo mas tarde.";
+      "No pudimos eliminar la cepa. Por favor, inténtalo de nuevo mas tarde.";
     alertVisible.value = true;
   }
 };
@@ -199,7 +199,7 @@ const refreshAuth = async () => {
 
 const handleAlertClose = (newValue, sendToLogin) => {
   if (sendToLogin) {
-    router.push("/login");
+    router.push("/");
   }
   alertVisible.value = newValue;
 };

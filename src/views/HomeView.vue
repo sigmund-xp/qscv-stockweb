@@ -1,5 +1,5 @@
 <template>
-  <HeaderComponent />
+  <HeaderComponent :isHome="true" />
   <v-container class="filter-container" fluid>
     <v-row justify="center" align="center" dense>
       <v-col

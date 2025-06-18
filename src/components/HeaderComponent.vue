@@ -6,16 +6,24 @@
       </div>
     </div>
     <v-spacer />
-    <v-btn icon="mdi-home" color="grey-lighten-1" @click="goHome" />
+    <v-btn v-if="!isHome" icon="mdi-home" color="grey-lighten-1" @click="goHome" />
     <v-btn icon="mdi-logout" color="grey-lighten-1" @click="logout" />
   </v-toolbar>
 </template>
 
 <script setup>
+import { defineProps } from "vue";
 import { useRouter } from "vue-router";
 import { useAuthStore } from "@/stores/auth.js";
 import { useUIStore } from "@/stores/ui.js";
 import AuthService from "@/services/AuthService.js";
+
+defineProps({
+  isHome: {
+    type: Boolean,
+    default: false,
+  },
+});
 
 const router = useRouter();
 const auth = useAuthStore();
