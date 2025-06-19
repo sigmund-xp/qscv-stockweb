@@ -10,6 +10,14 @@ class CepaService {
     })
   }
 
+  static getListCombo(token) {
+    return backend.post('/api/v1/cepa/list', { kind: "combo"}, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+  }
+
   static create(cepa, token) {
     return backend.post('/api/v1/cepa', cepa, {
       headers: {

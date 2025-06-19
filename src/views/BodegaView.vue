@@ -165,6 +165,7 @@ const agregarBodega = async (bodega) => {
 
 const deleteBodega = async () => {
   try {
+    console.log("deleteBodega");
     await refreshAuth();
     await BodegaService.delete(bodegaToDelete.value._id, auth.token);
     await actualizarInfo();

@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
-import StockView from '@/views/StockView.vue'
+import EtiquetaView from '@/views/EtiquetaView.vue'
 import BodegaView from '@/views/BodegaView.vue'
 import CepaView from '@/views/CepaView.vue'
 import LoginView from '@/views/LoginView.vue'
+import StockView from '@/views/StockView.vue'
 
 const routes = [
   {
@@ -20,6 +21,11 @@ const routes = [
     path: '/stock',
     name: 'stock',
     component: StockView
+  },
+  {
+    path: '/etiquetas',
+    name: 'etiquetas',
+    component: EtiquetaView
   },
   {
     path: '/bodegas',

@@ -10,6 +10,14 @@ class BodegaService {
     })
   }
 
+  static getListCombo(token) {
+    return backend.post('/api/v1/bodega/list', { kind: "combo"}, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+  }
+
   static create(bodega, token) {
     return backend.post('/api/v1/bodega', bodega, {
       headers: {

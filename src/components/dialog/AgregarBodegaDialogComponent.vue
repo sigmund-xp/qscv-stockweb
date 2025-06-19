@@ -5,7 +5,7 @@
     width="500px"
     persistent
   >
-    <v-card class="pa-5" color="grey-lighten-1">
+    <v-card class="pa-5" cxolor="grey-lighten-1">
       <v-card-title class="teal-darken-3">Agregar Bodega</v-card-title>
       <v-row>
         <v-col cols="12">

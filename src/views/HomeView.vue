@@ -4,7 +4,7 @@
     <v-row justify="center" align="center" dense>
       <v-col
         cols="12"
-        sm="4"
+        sm="3"
         class="d-flex justify-center"
         v-for="(item, index) in menuItems"
         :key="index"
@@ -36,9 +36,15 @@ const router = useRouter();
 const menuItems = [
   {
     label: "Stock",
-    icon: "mdi-bottle-wine",
+    icon: "mdi-package",
     color: "#6A1B9A",
     action: () => router.push("/stock"),
+  },
+  {
+    label: "Etiquetas",
+    icon: "mdi-bottle-wine",
+    color: "teal-darken-3",
+    action: () => router.push("/etiquetas"),
   },
   {
     label: "Bodegas",
